@@ -701,7 +701,7 @@ export class ReactNativeModal extends React.Component<ModalProps, State> {
     // If there's no custom backdrop, handle presses with
     // TouchableWithoutFeedback
     return (
-      <TouchableWithoutFeedback onPress={onBackdropPress}>
+      <TouchableWithoutFeedback onPress={onBackdropPress} accessible={false}>
         {backdropWrapper}
       </TouchableWithoutFeedback>
     );
